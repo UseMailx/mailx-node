@@ -1,10 +1,10 @@
-# @mailx/sdk
+# mailx-sdk
 
 Official Node/TypeScript client for the MailX API. Targets the OpenAPI spec
 as of `internal/api/openapi.go` at repo commit `c05c751` (v0.43).
 
 ```ts
-import { MailXClient } from "@mailx/sdk";
+import { MailXClient } from "mailx-sdk";
 
 const client = new MailXClient({ apiKey: process.env.MAILX_API_KEY!, baseUrl: "https://your-mailx-host/v1" });
 
