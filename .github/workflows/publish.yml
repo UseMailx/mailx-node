@@ -23,11 +23,11 @@ jobs:
       - name: Install dependencies
         run: npm install --no-save typescript
 
-      - name: Run tests
-        run: npm test
-
       - name: Build
         run: npm run build
+
+      - name: Run tests
+        run: npm test
 
       - name: Publish
         run: npm publish --access public
