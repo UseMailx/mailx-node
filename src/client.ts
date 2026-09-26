@@ -246,6 +246,9 @@ export class MailXClient {
   analyticsBroadcast(id: string): Promise<JSONObject> {
     return this.request("GET", `/analytics/broadcasts/${encodeURIComponent(id)}`);
   }
+  analyticsDomains(from: string, to: string): Promise<JSONObject> {
+    return this.request("GET", "/analytics/domains", { query: { from, to } });
+  }
 
   // ---- Suppressions ----
   createSuppression(body: JSONObject): Promise<JSONObject> {
